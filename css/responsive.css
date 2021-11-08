@@ -35,7 +35,14 @@
 @media (min-width: 1024px) {
   main .containerIndex .descripcion .fotoPerfil {
     background-size: cover;
-    height: 170px;
+    width: 20%;
+  }
+}
+
+@media (min-width: 1300px) {
+  main .containerIndex .descripcion .fotoPerfil {
+    background-size: cover;
+    height: 150px;
   }
 }
 
