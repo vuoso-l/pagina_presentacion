@@ -1,0 +1,16 @@
+footer {
+  a {
+    padding: 10px;
+  }
+  .redSocial1::after {
+    content: "\f08c";
+    font-family: "Font Awesome 5 Brands";
+    color: #0000ffc9;
+    @extend %detallesRedSocial;
+  }
+  .redSocial2::after {
+    content: "\f09b";
+    font-family: "Font Awesome 5 Brands";
+    @extend %detallesRedSocial;
+  }
+}

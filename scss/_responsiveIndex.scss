@@ -1,0 +1,26 @@
+@media (min-width: 768px) {
+  main {
+    .containerIndex {
+      width: 80%;
+      margin: auto;
+      .descripcion {
+        .fotoPerfil {
+          height: 130px;
+        }
+      }
+    }
+  }  
+}
+
+@media (min-width: 1024px) {
+  main {
+    .containerIndex {      
+      .descripcion {
+        .fotoPerfil {
+          background-size: cover;
+          height: 170px;
+        }
+      }
+    }
+  }  
+}

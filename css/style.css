@@ -1,0 +1,372 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,700&display=swap");
+main .containerProyectos .estaticos h2, main .containerProyectos .estaticos a, main .containerProyectos .dinamicos h2, main .containerProyectos .dinamicos a, main .containerProyectos .toDo h2, main .containerProyectos .toDo a, main .containerProyectos .felinos h2, main .containerProyectos .felinos a, main .containerProyectos .sandBox h2, main .containerProyectos .sandBox a, main .containerProyectos .api-get h2, main .containerProyectos .api-get a, main .containerProyectos .backPetshop h2, main .containerProyectos .backPetshop a, main .containerProyectos .backHeroes h2, main .containerProyectos .backHeroes a, main .containerProyectos .backCvLucas h2, main .containerProyectos .backCvLucas a, main .containerProyectos .backCvBatman h2, main .containerProyectos .backCvBatman a, main .containerProyectos .backLemonPie h2, main .containerProyectos .backLemonPie a, main .containerProyectos .backPizzeria h2, main .containerProyectos .backPizzeria a {
+  background-color: aliceblue;
+  box-shadow: 2px 2px 2px;
+  border-radius: 5px;
+  margin: 5px 0px;
+  padding: 5px 10px;
+  text-align: center;
+  color: black;
+}
+
+main .containerProyectos .estaticos a:hover, main .containerProyectos .dinamicos a:hover, main .containerProyectos .toDo a:hover, main .containerProyectos .felinos a:hover, main .containerProyectos .sandBox a:hover, main .containerProyectos .api-get a:hover, main .containerProyectos .backPetshop a:hover, main .containerProyectos .backHeroes a:hover, main .containerProyectos .backCvLucas a:hover, main .containerProyectos .backCvBatman a:hover, main .containerProyectos .backLemonPie a:hover, main .containerProyectos .backPizzeria a:hover {
+  padding: 7.5px 15px;
+  font-size: 1.5rem;
+  color: #4242d6;
+}
+
+footer .redSocial1::after, footer .redSocial2::after {
+  font-weight: 400;
+  padding: 5px;
+}
+
+/* Importo fuente desde fonts google*/
+/* Estilos Generales */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+img {
+  max-width: 100%;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+}
+
+h1:first-letter,
+h2:first-letter,
+h3::first-letter,
+p:first-letter {
+  text-transform: uppercase;
+}
+
+header, footer {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 10px 0;
+  background-color: aliceblue;
+}
+
+/* Header*/
+h1 {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+nav label {
+  display: block;
+  cursor: pointer;
+}
+
+nav input[type="checkbox"] {
+  display: none;
+}
+
+nav #toggle:checked + .menu {
+  display: block;
+}
+
+nav div {
+  text-align: center;
+  width: 100%;
+  display: none;
+}
+
+nav div a {
+  display: block;
+  border-bottom: 1px solid #eaeaeb;
+  margin: 0;
+}
+
+main .containerProyectos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main .containerProyectos .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 70%;
+  height: 400px;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+  margin: 20px 0px;
+}
+
+main .containerProyectos .estaticos {
+  /* Card proyectos estaticos */
+  background: #ebe2e2 url("../img/html-css.jpg") no-repeat center;
+  background-size: contain;
+}
+
+main .containerProyectos .estaticos h2 {
+  animation: movimiento 3s infinite;
+}
+
+@keyframes movimiento {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.25);
+  }
+}
+
+main .containerProyectos .dinamicos {
+  /* Card proyectos estaticos */
+  background: #ebe2e2 url("../img/html-css-js.png") no-repeat center;
+  background-size: contain;
+}
+
+main .containerProyectos .dinamicos h2 {
+  animation: movimiento 3s infinite;
+}
+
+@keyframes movimiento {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.25);
+  }
+}
+
+main .containerProyectos .toDo {
+  /* Card proyecto ToDo app */
+  background: #ebe2e2 url("../img/ToDo_app.png") no-repeat center;
+  background-size: contain;
+}
+
+main .containerProyectos .felinos {
+  /* Card proyecto ToDo app */
+  background: #ebe2e2 url("../img/felino.jpg") no-repeat center;
+  background-size: contain;
+}
+
+main .containerProyectos .sandBox {
+  /* Card proyecto ToDo app */
+  background: #ebe2e2 url("") no-repeat center;
+  background-size: contain;
+}
+
+main .containerProyectos .api-get {
+  /* Card proyecto ToDo app */
+  background: #ebe2e2 url("") no-repeat center;
+  background-size: contain;
+}
+
+main .containerProyectos .backPetshop {
+  /* Card petshop */
+  background: #ebe2e2 url("../img/pawprint 1.svg") no-repeat center;
+  background-size: contain;
+}
+
+main .containerProyectos .backPetshop h2 {
+  animation: movimiento 3s infinite;
+}
+
+@keyframes movimiento {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.25);
+  }
+}
+
+main .containerProyectos .backHeroes {
+  /* Card súper héroes */
+  background: #ebe2e2 url("../img/liga-justicia-batman.svg") no-repeat center;
+  background-size: contain;
+}
+
+main .containerProyectos .backHeroes h2 {
+  animation: movimiento 3s infinite;
+}
+
+@keyframes movimiento {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.25);
+  }
+}
+
+main .containerProyectos .backCvLucas {
+  /* Card cv Lucas */
+  background: #ebe2e2 url("../img/fotoLucasCorta1.jpg") no-repeat center;
+  background-size: contain;
+}
+
+main .containerProyectos .backCvLucas h2 {
+  animation: movimiento 3s infinite;
+}
+
+@keyframes movimiento {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.25);
+  }
+}
+
+main .containerProyectos .backCvBatman {
+  /* Card cv Batman */
+  background: #ebe2e2 url("../img/logo_batman.svg") no-repeat center;
+  background-size: contain;
+}
+
+main .containerProyectos .backCvBatman h2 {
+  animation: movimiento 3s infinite;
+}
+
+@keyframes movimiento {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.25);
+  }
+}
+
+main .containerProyectos .backLemonPie {
+  /* Card Lemon Pie */
+  background: #ebe2e2 url("../img/lemon-pie-1.svg") no-repeat center;
+  background-size: contain;
+}
+
+main .containerProyectos .backLemonPie h2 {
+  animation: movimiento 3s infinite;
+}
+
+@keyframes movimiento {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.25);
+  }
+}
+
+main .containerProyectos .backPizzeria {
+  /* Card Pizzería */
+  background: #ebe2e2 url("../img/VectorPizza.svg") no-repeat center;
+  background-size: contain;
+}
+
+main .containerProyectos .backPizzeria h2 {
+  animation: movimiento 2s infinite;
+}
+
+@keyframes movimiento {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.25);
+  }
+}
+
+.containerIndex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 50px 20px;
+}
+
+.containerIndex .descripcion {
+  /*section*/
+  padding-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-bottom: 2px solid black;
+}
+
+.containerIndex .descripcion h2 {
+  padding-bottom: 5%;
+  align-self: flex-start;
+}
+
+.containerIndex .descripcion .fotoPerfil {
+  /*div*/
+  width: 30%;
+  height: 100px;
+  background: #ebe2e2 url("../img/fotoLucasCorta1.jpg") no-repeat center;
+  background-size: contain;
+  border-radius: 50%;
+  margin-bottom: 5%;
+}
+
+.containerIndex .descripcion p {
+  text-align: justify;
+  width: 70%;
+}
+
+.containerIndex .cv {
+  /*div*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 3%;
+  width: 90%;
+}
+
+.containerIndex .cv section {
+  width: 100%;
+  border-bottom: 1px solid;
+  padding: 2% 0;
+}
+
+.containerIndex .cv section ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 2%;
+}
+
+.containerIndex .cv section ul li::before {
+  content: "\f0a4";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  color: #4242d6;
+  padding: 5px;
+}
+
+footer a {
+  padding: 10px;
+}
+
+footer .redSocial1::after {
+  content: "\f08c";
+  font-family: "Font Awesome 5 Brands";
+  color: #0000ffc9;
+}
+
+footer .redSocial2::after {
+  content: "\f09b";
+  font-family: "Font Awesome 5 Brands";
+}

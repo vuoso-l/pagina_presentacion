@@ -1,0 +1,29 @@
+/* Header*/
+h1 {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+nav {
+  label {
+    display: block;
+    cursor: pointer;
+  }
+  input[type="checkbox"] {
+    display: none;
+  }
+
+  #toggle:checked + .menu {
+    display: block;
+  }
+  div {
+    text-align: center;
+    width: 100%;
+    display: none;
+    a {
+      display: block;
+      border-bottom: 1px solid hsl(240, 2%, 92%);
+      margin: 0;
+    }
+  }
+}

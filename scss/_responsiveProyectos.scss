@@ -1,0 +1,24 @@
+@media (min-width: 768px) {
+  main {
+    .containerProyectos {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 100px 0px;
+      .card {
+        width: 40%;
+        margin: 10px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  main{
+    .containerProyectos{
+      .card {
+        width: 30%;
+      }
+    }
+  }
+}
