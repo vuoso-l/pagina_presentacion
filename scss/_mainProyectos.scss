@@ -9,37 +9,7 @@ main {
       box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
       border-radius: 15px;
       margin: 20px 0px;
-    }
-    .estaticos {
-      /* Card proyectos estaticos */
-      @include backgroundImagenes("../img/html-css.jpg");
-      h2 {
-        @extend %subtYAncorProyectos;
-        animation: movimiento 3s infinite;
-      }
-      @include keyframeMovimiento;
-      a {
-        @extend %subtYAncorProyectos;
-        &:hover {
-          @extend %hoverBacks;
-        }
-      }
-    }
-    .dinamicos {
-      /* Card proyectos dinámicos */
-      @include backgroundImagenes("../img/html-css-js.png");
-      h2 {
-        @extend %subtYAncorProyectos;
-        animation: movimiento 3s infinite;
-      }
-      @include keyframeMovimiento;
-      a {
-        @extend %subtYAncorProyectos;
-        &:hover {
-          @extend %hoverBacks;
-        }
-      }
-    }
+    }    
     .toDo {
       /* Card proyecto ToDo app */
       @include backgroundImagenes("../img/ToDo_app.png");

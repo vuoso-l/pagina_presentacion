@@ -5,7 +5,7 @@ header, header nav div a {
   text-shadow: 2px 2px 2px black;
 }
 
-main .containerProyectos .estaticos h2, main .containerProyectos .estaticos a, main .containerProyectos .dinamicos h2, main .containerProyectos .dinamicos a, main .containerProyectos .toDo h2, main .containerProyectos .toDo a, main .containerProyectos .felinos h2, main .containerProyectos .felinos a, main .containerProyectos .sandBox h2, main .containerProyectos .sandBox a, main .containerProyectos .api-get h2, main .containerProyectos .api-get a, main .containerProyectos .chrono h2, main .containerProyectos .chrono a, main .containerProyectos .backPetshop h2, main .containerProyectos .backPetshop a, main .containerProyectos .backHeroes h2, main .containerProyectos .backHeroes a, main .containerProyectos .backCvLucas h2, main .containerProyectos .backCvLucas a, main .containerProyectos .backCvBatman h2, main .containerProyectos .backCvBatman a, main .containerProyectos .backLemonPie h2, main .containerProyectos .backLemonPie a, main .containerProyectos .backPizzeria h2, main .containerProyectos .backPizzeria a {
+main .container .estaticos h2, main .container .estaticos a, main .container .dinamicos h2, main .container .dinamicos a, main .containerProyectos .toDo h2, main .containerProyectos .toDo a, main .containerProyectos .felinos h2, main .containerProyectos .felinos a, main .containerProyectos .sandBox h2, main .containerProyectos .sandBox a, main .containerProyectos .api-get h2, main .containerProyectos .api-get a, main .containerProyectos .chrono h2, main .containerProyectos .chrono a, main .containerProyectos .backPetshop h2, main .containerProyectos .backPetshop a, main .containerProyectos .backHeroes h2, main .containerProyectos .backHeroes a, main .containerProyectos .backCvLucas h2, main .containerProyectos .backCvLucas a, main .containerProyectos .backCvBatman h2, main .containerProyectos .backCvBatman a, main .containerProyectos .backLemonPie h2, main .containerProyectos .backLemonPie a, main .containerProyectos .backPizzeria h2, main .containerProyectos .backPizzeria a {
   background-color: aliceblue;
   box-shadow: 2px 2px 2px;
   border-radius: 5px;
@@ -15,7 +15,7 @@ main .containerProyectos .estaticos h2, main .containerProyectos .estaticos a, m
   color: black;
 }
 
-main .containerProyectos .estaticos a:hover, main .containerProyectos .dinamicos a:hover, main .containerProyectos .toDo a:hover, main .containerProyectos .felinos a:hover, main .containerProyectos .sandBox a:hover, main .containerProyectos .api-get a:hover, main .containerProyectos .chrono a:hover, main .containerProyectos .backPetshop a:hover, main .containerProyectos .backHeroes a:hover, main .containerProyectos .backCvLucas a:hover, main .containerProyectos .backCvBatman a:hover, main .containerProyectos .backLemonPie a:hover, main .containerProyectos .backPizzeria a:hover {
+main .container .estaticos a:hover, main .container .dinamicos a:hover, main .containerProyectos .toDo a:hover, main .containerProyectos .felinos a:hover, main .containerProyectos .sandBox a:hover, main .containerProyectos .api-get a:hover, main .containerProyectos .chrono a:hover, main .containerProyectos .backPetshop a:hover, main .containerProyectos .backHeroes a:hover, main .containerProyectos .backCvLucas a:hover, main .containerProyectos .backCvBatman a:hover, main .containerProyectos .backLemonPie a:hover, main .containerProyectos .backPizzeria a:hover {
   padding: 7.5px 15px;
   font-size: 1.5rem;
   color: #4242d6;
@@ -114,6 +114,62 @@ header nav div a {
   margin: 0;
 }
 
+main .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main .container .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 70%;
+  height: 400px;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+  margin: 20px 0px;
+}
+
+main .container .estaticos {
+  /* Card proyectos estaticos */
+  background: #ebe2e2 url("../img/html-css.jpg") no-repeat center;
+  background-size: contain;
+}
+
+main .container .estaticos h2 {
+  animation: movimiento 3s infinite;
+}
+
+@keyframes movimiento {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.25);
+  }
+}
+
+main .container .dinamicos {
+  /* Card proyectos dinámicos */
+  background: #ebe2e2 url("../img/html-css-js.png") no-repeat center;
+  background-size: contain;
+}
+
+main .container .dinamicos h2 {
+  animation: movimiento 3s infinite;
+}
+
+@keyframes movimiento {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.25);
+  }
+}
+
 main .containerProyectos {
   display: flex;
   flex-direction: column;
@@ -130,44 +186,6 @@ main .containerProyectos .card {
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 15px;
   margin: 20px 0px;
-}
-
-main .containerProyectos .estaticos {
-  /* Card proyectos estaticos */
-  background: #ebe2e2 url("../img/html-css.jpg") no-repeat center;
-  background-size: contain;
-}
-
-main .containerProyectos .estaticos h2 {
-  animation: movimiento 3s infinite;
-}
-
-@keyframes movimiento {
-  from {
-    transform: scale(1);
-  }
-  to {
-    transform: scale(1.25);
-  }
-}
-
-main .containerProyectos .dinamicos {
-  /* Card proyectos dinámicos */
-  background: #ebe2e2 url("../img/html-css-js.png") no-repeat center;
-  background-size: contain;
-}
-
-main .containerProyectos .dinamicos h2 {
-  animation: movimiento 3s infinite;
-}
-
-@keyframes movimiento {
-  from {
-    transform: scale(1);
-  }
-  to {
-    transform: scale(1.25);
-  }
 }
 
 main .containerProyectos .toDo {
