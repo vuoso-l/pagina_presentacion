@@ -2,4 +2,4 @@
 
 ## Enlace que redirecciona a la página
 
-- [Página presentación](https://vuoso-l.github.io/Frontend1/pagina_presentacion/)
+- [Portfolio](https://vuoso-l.github.io/Frontend1/portfolio/)
