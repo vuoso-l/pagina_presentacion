@@ -68,7 +68,7 @@ main {
     }
     .sandBox {
       /* Card proyecto sandBox */
-      @include backgroundImagenes("");
+      @include backgroundImagenes("../img/solicitar_img.png");
       h2 {
         @extend %subtYAncorProyectos;
       }
@@ -80,8 +80,8 @@ main {
       }
     }
     .api-get {
-      /* Card proyecto ToDo app */
-      @include backgroundImagenes("");
+      /* Card proyecto fetch - API - GET */
+      @include backgroundImagenes("../img/fetch.jpg");
       h2 {
         @extend %subtYAncorProyectos;
       }
@@ -137,7 +137,7 @@ main {
     }
     .backCvLucas {
       /* Card cv Lucas */
-      @include backgroundImagenes("../img/fotoLucasCorta1.jpg");
+      @include backgroundImagenes("../img/perfil_linkedin.jpeg");
       h2 {
         @extend %subtYAncorProyectos;
         animation: movimiento 3s infinite;

@@ -58,6 +58,11 @@
   @include align-items($align-items);
 }
 
+@mixin backgroundHeader($url){
+  //background de imágenes
+  background: rgb(235, 226, 226) url($url) no-repeat;
+  background-size: cover;
+}
 @mixin backgroundImagenes($url){
   //background de imágenes
   background: rgb(235, 226, 226) url($url) no-repeat center;

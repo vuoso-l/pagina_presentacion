@@ -1,29 +1,42 @@
 /* Header*/
-h1 {
-  text-align: center;
-  font-size: 1.5rem;
-}
-
-nav {
-  label {
-    display: block;
-    cursor: pointer;
-  }
-  input[type="checkbox"] {
-    display: none;
-  }
-
-  #toggle:checked + .menu {
-    display: block;
-  }
-  div {
+header {
+  @include flex(column, center);
+  @include backgroundHeader("../img/portada_linkedin2.jpg");
+  padding: 30px 0px;
+  @extend %textHeader;
+  h1 {
     text-align: center;
-    width: 100%;
-    display: none;
-    a {
+    font-size: 28px;
+    
+  }
+
+  h3 {
+    font-size: 18px;
+    padding-bottom: 10px;
+  }
+
+  nav {
+    label {
       display: block;
-      border-bottom: 1px solid hsl(240, 2%, 92%);
-      margin: 0;
+      cursor: pointer;
+    }
+    input[type="checkbox"] {
+      display: none;
+    }
+
+    #toggle:checked + .menu {
+      display: block;
+    }
+    div {
+      text-align: center;
+      width: 100%;
+      display: none;
+      a {
+        @extend %textHeader;
+        display: block;
+        border-bottom: 1px solid hsl(240, 2%, 92%);
+        margin: 0;
+      }
     }
   }
 }

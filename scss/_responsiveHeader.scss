@@ -1,9 +1,11 @@
 @media (min-width: 768px) {
   header {
-    flex-direction: column;
+    padding: 35px 0px;
     h1 {
       font-size: 50px;
-      padding: 20px 0px;
+    }
+    h3{
+      font-size: 26px;
     }
     nav {
       #toggle:checked {
@@ -14,12 +16,38 @@
       }
       div {
         display: flex;
-        font-size: 20px;
+        font-size: 22px;
         position: relative;
         a {
-          padding: 0px 5px;
+          padding-top: 10px;
         }
       }
     }
   }
+}
+
+@media (min-width: 1024px) {
+  .headerIndex{
+    padding: 65px 0px;
+  }
+  header {
+    padding: 45px 0px;
+    h1 {
+      font-size: 54px;
+    }
+    h3{
+      font-size: 28px;
+    }
+    nav {      
+      div {        
+        font-size: 24px;
+      }
+    }
+  }
+}
+
+@media (min-width: 1024px) {
+  .headerIndex{
+    padding: 85px 0px;
+  }  
 }

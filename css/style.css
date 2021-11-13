@@ -1,5 +1,10 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,700&display=swap");
+header, header nav div a {
+  color: white;
+  text-shadow: 2px 2px 2px black;
+}
+
 main .containerProyectos .estaticos h2, main .containerProyectos .estaticos a, main .containerProyectos .dinamicos h2, main .containerProyectos .dinamicos a, main .containerProyectos .toDo h2, main .containerProyectos .toDo a, main .containerProyectos .felinos h2, main .containerProyectos .felinos a, main .containerProyectos .sandBox h2, main .containerProyectos .sandBox a, main .containerProyectos .api-get h2, main .containerProyectos .api-get a, main .containerProyectos .chrono h2, main .containerProyectos .chrono a, main .containerProyectos .backPetshop h2, main .containerProyectos .backPetshop a, main .containerProyectos .backHeroes h2, main .containerProyectos .backHeroes a, main .containerProyectos .backCvLucas h2, main .containerProyectos .backCvLucas a, main .containerProyectos .backCvBatman h2, main .containerProyectos .backCvBatman a, main .containerProyectos .backLemonPie h2, main .containerProyectos .backLemonPie a, main .containerProyectos .backPizzeria h2, main .containerProyectos .backPizzeria a {
   background-color: aliceblue;
   box-shadow: 2px 2px 2px;
@@ -65,31 +70,45 @@ header, footer {
 }
 
 /* Header*/
-h1 {
-  text-align: center;
-  font-size: 1.5rem;
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #ebe2e2 url("../img/portada_linkedin2.jpg") no-repeat;
+  background-size: cover;
+  padding: 30px 0px;
 }
 
-nav label {
+header h1 {
+  text-align: center;
+  font-size: 28px;
+}
+
+header h3 {
+  font-size: 18px;
+  padding-bottom: 10px;
+}
+
+header nav label {
   display: block;
   cursor: pointer;
 }
 
-nav input[type="checkbox"] {
+header nav input[type="checkbox"] {
   display: none;
 }
 
-nav #toggle:checked + .menu {
+header nav #toggle:checked + .menu {
   display: block;
 }
 
-nav div {
+header nav div {
   text-align: center;
   width: 100%;
   display: none;
 }
 
-nav div a {
+header nav div a {
   display: block;
   border-bottom: 1px solid #eaeaeb;
   margin: 0;
@@ -165,13 +184,13 @@ main .containerProyectos .felinos {
 
 main .containerProyectos .sandBox {
   /* Card proyecto sandBox */
-  background: #ebe2e2 url("") no-repeat center;
+  background: #ebe2e2 url("../img/solicitar_img.png") no-repeat center;
   background-size: contain;
 }
 
 main .containerProyectos .api-get {
-  /* Card proyecto ToDo app */
-  background: #ebe2e2 url("") no-repeat center;
+  /* Card proyecto fetch - API - GET */
+  background: #ebe2e2 url("../img/fetch.jpg") no-repeat center;
   background-size: contain;
 }
 
@@ -221,7 +240,7 @@ main .containerProyectos .backHeroes h2 {
 
 main .containerProyectos .backCvLucas {
   /* Card cv Lucas */
-  background: #ebe2e2 url("../img/fotoLucasCorta1.jpg") no-repeat center;
+  background: #ebe2e2 url("../img/perfil_linkedin.jpeg") no-repeat center;
   background-size: contain;
 }
 
@@ -293,73 +312,6 @@ main .containerProyectos .backPizzeria h2 {
   to {
     transform: scale(1.25);
   }
-}
-
-.containerIndex {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  padding: 50px 20px;
-}
-
-.containerIndex .descripcion {
-  /*section*/
-  padding-bottom: 15px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border-bottom: 2px solid black;
-}
-
-.containerIndex .descripcion h2 {
-  padding-bottom: 5%;
-  align-self: flex-start;
-}
-
-.containerIndex .descripcion .fotoPerfil {
-  /*div*/
-  width: 30%;
-  height: 100px;
-  background: #ebe2e2 url("../img/fotoLucasCorta1.jpg") no-repeat center;
-  background-size: contain;
-  border-radius: 50%;
-  margin-bottom: 5%;
-}
-
-.containerIndex .descripcion p {
-  text-align: justify;
-  width: 70%;
-}
-
-.containerIndex .cv {
-  /*div*/
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-top: 3%;
-  width: 90%;
-}
-
-.containerIndex .cv section {
-  width: 100%;
-  border-bottom: 1px solid;
-  padding: 2% 0;
-}
-
-.containerIndex .cv section ul {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  padding: 2%;
-}
-
-.containerIndex .cv section ul li::before {
-  content: "\f0a4";
-  font-family: "Font Awesome 5 Free";
-  font-weight: 900;
-  color: #4242d6;
-  padding: 5px;
 }
 
 footer a {

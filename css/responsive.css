@@ -1,10 +1,12 @@
 @media (min-width: 768px) {
   header {
-    flex-direction: column;
+    padding: 35px 0px;
   }
   header h1 {
     font-size: 50px;
-    padding: 20px 0px;
+  }
+  header h3 {
+    font-size: 26px;
   }
   header nav #toggle:checked {
     display: none;
@@ -14,35 +16,35 @@
   }
   header nav div {
     display: flex;
-    font-size: 20px;
+    font-size: 22px;
     position: relative;
   }
   header nav div a {
-    padding: 0px 5px;
-  }
-}
-
-@media (min-width: 768px) {
-  main .containerIndex {
-    width: 80%;
-    margin: auto;
-  }
-  main .containerIndex .descripcion .fotoPerfil {
-    height: 130px;
+    padding-top: 10px;
   }
 }
 
 @media (min-width: 1024px) {
-  main .containerIndex .descripcion .fotoPerfil {
-    background-size: cover;
-    width: 20%;
+  .headerIndex {
+    padding: 65px 0px;
+  }
+  header {
+    padding: 45px 0px;
+  }
+  header h1 {
+    font-size: 54px;
+  }
+  header h3 {
+    font-size: 28px;
+  }
+  header nav div {
+    font-size: 24px;
   }
 }
 
-@media (min-width: 1300px) {
-  main .containerIndex .descripcion .fotoPerfil {
-    background-size: cover;
-    height: 150px;
+@media (min-width: 1024px) {
+  .headerIndex {
+    padding: 85px 0px;
   }
 }
 
