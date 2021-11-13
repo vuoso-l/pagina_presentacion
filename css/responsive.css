@@ -49,6 +49,25 @@
 }
 
 @media (min-width: 768px) {
+  main .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 100px 0px;
+  }
+  main .container .card {
+    width: 40%;
+    margin: 10px;
+  }
+}
+
+@media (min-width: 1024px) {
+  main .container .card {
+    width: 30%;
+  }
+}
+
+@media (min-width: 768px) {
   main .containerProyectos {
     flex-direction: row;
     flex-wrap: wrap;
