@@ -9,7 +9,7 @@ main {
       box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
       border-radius: 15px;
       margin: 20px 0px;
-    }    
+    }
     .toDo {
       /* Card proyecto ToDo app */
       @include backgroundImagenes("../img/ToDo_app.png");
@@ -153,6 +153,36 @@ main {
     .backPizzeria {
       /* Card Pizzería */
       @include backgroundImagenes("../img/VectorPizza.svg");
+      h2 {
+        @extend %subtYAncorProyectos;
+        animation: movimiento 2s infinite;
+      }
+      @include keyframeMovimiento;
+      a {
+        @extend %subtYAncorProyectos;
+        &:hover {
+          @extend %hoverBacks;
+        }
+      }
+    }
+    .web-mH {
+      /* Card Manteca & Harina */
+      @include backgroundImagenes("../img/logo_m&h.jpeg");
+      h2 {
+        @extend %subtYAncorProyectos;
+        animation: movimiento 2s infinite;
+      }
+      @include keyframeMovimiento;
+      a {
+        @extend %subtYAncorProyectos;
+        &:hover {
+          @extend %hoverBacks;
+        }
+      }
+    }
+    .api-github {
+      /* Card GitHub Api */
+      @include backgroundImagenes("../img/logo_github.png");
       h2 {
         @extend %subtYAncorProyectos;
         animation: movimiento 2s infinite;

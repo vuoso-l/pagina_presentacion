@@ -40,5 +40,20 @@ main {
         }
       }
     }
+    .api {
+      /* Card proyectos front API propia */
+      @include backgroundImagenes("../img/front-api.png");
+      h2 {
+        @extend %subtYAncorProyectos;
+        animation: movimiento 3s infinite;
+      }
+      @include keyframeMovimiento;
+      a {
+        @extend %subtYAncorProyectos;
+        &:hover {
+          @extend %hoverBacks;
+        }
+      }
+    }
   }
 }
