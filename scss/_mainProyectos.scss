@@ -6,193 +6,101 @@ main {
       justify-content: space-between;
       width: 70%;
       height: 400px;
-      box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+      box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.25);
+      border: 1px solid black;
       border-radius: 15px;
       margin: 20px 0px;
+      h2 {
+        @extend %subtYAncorProyectos;
+        animation: movimiento 3s infinite;
+      }
+      @include keyframeMovimiento;
+      a {
+        @extend %subtYAncorProyectos;
+        &:hover {
+          @extend %hoverBacks;
+        }
+      }
     }
+    /* Card proyecto ToDo app */
     .toDo {
-      /* Card proyecto ToDo app */
-      @include backgroundImagenes("../img/ToDo_app.png");
+      .backImage {
+        @include backgroundImagenes("../img/ToDo_app.png");
+      }
       h2 {
         @extend %subtYAncorProyectos;
       }
-      a {
-        @extend %subtYAncorProyectos;
-        &:hover {
-          @extend %hoverBacks;
-        }
-      }
     }
+    /* Card proyecto felinos - cambiar tema claro/oscuro */
     .felinos {
-      /* Card proyecto felinos - cambiar tema claro/oscuro */
-      @include backgroundImagenes("../img/felino.jpg");
-      h2 {
-        @extend %subtYAncorProyectos;
-      }
-      a {
-        @extend %subtYAncorProyectos;
-        &:hover {
-          @extend %hoverBacks;
-        }
+      .backImage {
+        @include backgroundImagenes("../img/felino.jpg");
       }
     }
+    /* Card proyecto sandBox */
     .sandBox {
-      /* Card proyecto sandBox */
-      @include backgroundImagenes("../img/solicitar_img.png");
-      h2 {
-        @extend %subtYAncorProyectos;
-      }
-      a {
-        @extend %subtYAncorProyectos;
-        &:hover {
-          @extend %hoverBacks;
-        }
+      .backImage {
+        @include backgroundImagenes("../img/solicitar_img.png");
       }
     }
+    /* Card proyecto fetch - API - GET */
     .api-get {
-      /* Card proyecto fetch - API - GET */
-      @include backgroundImagenes("../img/fetch.jpg");
-      h2 {
-        @extend %subtYAncorProyectos;
-      }
-      a {
-        @extend %subtYAncorProyectos;
-        &:hover {
-          @extend %hoverBacks;
-        }
+      .backImage {
+        @include backgroundImagenes("../img/fetch.jpg");
       }
     }
+    /* Card proyecto cronómetro */
     .chrono {
-      /* Card proyecto cronómetro */
-      @include backgroundImagenes("../img/cronometro.jpg");
-      h2 {
-        @extend %subtYAncorProyectos;
-      }
-      a {
-        @extend %subtYAncorProyectos;
-        &:hover {
-          @extend %hoverBacks;
-        }
+      .backImage {
+        @include backgroundImagenes("../img/cronometro.jpg");
       }
     }
+    /* Card petshop */
     .backPetshop {
-      /* Card petshop */
-      @include backgroundImagenes("../img/pawprint\ 1.svg");
-      h2 {
-        @extend %subtYAncorProyectos;
-        animation: movimiento 3s infinite;
-      }
-      @include keyframeMovimiento;
-      a {
-        @extend %subtYAncorProyectos;
-        &:hover {
-          @extend %hoverBacks;
-        }
+      .backImage {
+        @include backgroundImagenes("../img/pawprint\ 1.svg");
       }
     }
+    /* Card súper héroes */
     .backHeroes {
-      /* Card súper héroes */
-      @include backgroundImagenes("../img/liga-justicia-batman.svg");
-      h2 {
-        @extend %subtYAncorProyectos;
-        animation: movimiento 3s infinite;
-      }
-      @include keyframeMovimiento;
-      a {
-        @extend %subtYAncorProyectos;
-        &:hover {
-          @extend %hoverBacks;
-        }
+      .backImage {
+        @include backgroundImagenes("../img/liga-justicia-batman.svg");
       }
     }
+    /* Card cv Lucas */
     .backCvLucas {
-      /* Card cv Lucas */
-      @include backgroundImagenes("../img/perfil_linkedin.jpeg");
-      h2 {
-        @extend %subtYAncorProyectos;
-        animation: movimiento 3s infinite;
-      }
-      @include keyframeMovimiento;
-      a {
-        @extend %subtYAncorProyectos;
-        &:hover {
-          @extend %hoverBacks;
-        }
+      .backImage {
+        @include backgroundImagenes("../img/perfil_linkedin.jpeg");
       }
     }
+    /* Card cv Batman */
     .backCvBatman {
-      /* Card cv Batman */
-      @include backgroundImagenes("../img/logo_batman.svg");
-      h2 {
-        @extend %subtYAncorProyectos;
-        animation: movimiento 3s infinite;
-      }
-      @include keyframeMovimiento;
-      a {
-        @extend %subtYAncorProyectos;
-        &:hover {
-          @extend %hoverBacks;
-        }
+      .backImage {
+        @include backgroundImagenes("../img/logo_batman.svg");
       }
     }
+    /* Card Lemon Pie */
     .backLemonPie {
-      /* Card Lemon Pie */
-      @include backgroundImagenes("../img/lemon-pie-1.svg");
-      h2 {
-        @extend %subtYAncorProyectos;
-        animation: movimiento 3s infinite;
-      }
-      @include keyframeMovimiento;
-      a {
-        @extend %subtYAncorProyectos;
-        &:hover {
-          @extend %hoverBacks;
-        }
+      .backImage {
+        @include backgroundImagenes("../img/lemon-pie-1.svg");
       }
     }
+    /* Card Pizzería */
     .backPizzeria {
-      /* Card Pizzería */
-      @include backgroundImagenes("../img/VectorPizza.svg");
-      h2 {
-        @extend %subtYAncorProyectos;
-        animation: movimiento 2s infinite;
-      }
-      @include keyframeMovimiento;
-      a {
-        @extend %subtYAncorProyectos;
-        &:hover {
-          @extend %hoverBacks;
-        }
+      .backImage {
+        @include backgroundImagenes("../img/VectorPizza.svg");
       }
     }
+    /* Card Manteca & Harina */
     .web-mH {
-      /* Card Manteca & Harina */
-      @include backgroundImagenes("../img/logo_m&h.jpeg");
-      h2 {
-        @extend %subtYAncorProyectos;
-        animation: movimiento 2s infinite;
-      }
-      @include keyframeMovimiento;
-      a {
-        @extend %subtYAncorProyectos;
-        &:hover {
-          @extend %hoverBacks;
-        }
+      .backImage {
+        @include backgroundImagenes("../img/logo_m&h.jpeg");
       }
     }
+    /* Card GitHub Api */
     .api-github {
-      /* Card GitHub Api */
-      @include backgroundImagenes("../img/logo_github.png");
-      h2 {
-        @extend %subtYAncorProyectos;
-        animation: movimiento 2s infinite;
-      }
-      @include keyframeMovimiento;
-      a {
-        @extend %subtYAncorProyectos;
-        &:hover {
-          @extend %hoverBacks;
-        }
+      .backImage {
+        @include backgroundImagenes("../img/logo_github.png");
       }
     }
   }

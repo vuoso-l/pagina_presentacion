@@ -5,7 +5,7 @@ header, header nav div a {
   text-shadow: 2px 2px 2px black;
 }
 
-main .container .card h2, main .container .card a, main .containerProyectos .toDo h2, main .containerProyectos .toDo a, main .containerProyectos .felinos h2, main .containerProyectos .felinos a, main .containerProyectos .sandBox h2, main .containerProyectos .sandBox a, main .containerProyectos .api-get h2, main .containerProyectos .api-get a, main .containerProyectos .chrono h2, main .containerProyectos .chrono a, main .containerProyectos .backPetshop h2, main .containerProyectos .backPetshop a, main .containerProyectos .backHeroes h2, main .containerProyectos .backHeroes a, main .containerProyectos .backCvLucas h2, main .containerProyectos .backCvLucas a, main .containerProyectos .backCvBatman h2, main .containerProyectos .backCvBatman a, main .containerProyectos .backLemonPie h2, main .containerProyectos .backLemonPie a, main .containerProyectos .backPizzeria h2, main .containerProyectos .backPizzeria a, main .containerProyectos .web-mH h2, main .containerProyectos .web-mH a, main .containerProyectos .api-github h2, main .containerProyectos .api-github a {
+main .container .card h2, main .container .card a, main .containerProyectos .card h2, main .containerProyectos .card a, main .containerProyectos .toDo h2 {
   background-color: aliceblue;
   box-shadow: 2px 2px 2px;
   border-radius: 5px;
@@ -15,7 +15,7 @@ main .container .card h2, main .container .card a, main .containerProyectos .toD
   color: black;
 }
 
-main .container .card a:hover, main .containerProyectos .toDo a:hover, main .containerProyectos .felinos a:hover, main .containerProyectos .sandBox a:hover, main .containerProyectos .api-get a:hover, main .containerProyectos .chrono a:hover, main .containerProyectos .backPetshop a:hover, main .containerProyectos .backHeroes a:hover, main .containerProyectos .backCvLucas a:hover, main .containerProyectos .backCvBatman a:hover, main .containerProyectos .backLemonPie a:hover, main .containerProyectos .backPizzeria a:hover, main .containerProyectos .web-mH a:hover, main .containerProyectos .api-github a:hover {
+main .container .card a:hover, main .containerProyectos .card a:hover {
   background-color: grey;
   color: white;
 }
@@ -182,6 +182,19 @@ main .containerProyectos {
   display: flex;
   flex-direction: column;
   align-items: center;
+  /* Card proyecto ToDo app */
+  /* Card proyecto felinos - cambiar tema claro/oscuro */
+  /* Card proyecto sandBox */
+  /* Card proyecto fetch - API - GET */
+  /* Card proyecto cronómetro */
+  /* Card petshop */
+  /* Card súper héroes */
+  /* Card cv Lucas */
+  /* Card cv Batman */
+  /* Card Lemon Pie */
+  /* Card Pizzería */
+  /* Card Manteca & Harina */
+  /* Card GitHub Api */
 }
 
 main .containerProyectos .card {
@@ -191,217 +204,114 @@ main .containerProyectos .card {
   justify-content: space-between;
   width: 70%;
   height: 400px;
-  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.25);
+  border: 1px solid black;
   border-radius: 15px;
   margin: 20px 0px;
 }
 
-main .containerProyectos .toDo {
-  /* Card proyecto ToDo app */
+main .containerProyectos .card h2 {
+  animation: movimiento 3s infinite;
+}
+
+@keyframes movimiento {
+  from {
+    transform: scale(0.8);
+  }
+  to {
+    transform: scale(0.9);
+  }
+}
+
+main .containerProyectos .toDo .backImage {
   width: 100%;
   height: 400px;
   background: white url("../img/ToDo_app.png") no-repeat center;
   background-size: contain;
 }
 
-main .containerProyectos .felinos {
-  /* Card proyecto felinos - cambiar tema claro/oscuro */
+main .containerProyectos .felinos .backImage {
   width: 100%;
   height: 400px;
   background: white url("../img/felino.jpg") no-repeat center;
   background-size: contain;
 }
 
-main .containerProyectos .sandBox {
-  /* Card proyecto sandBox */
+main .containerProyectos .sandBox .backImage {
   width: 100%;
   height: 400px;
   background: white url("../img/solicitar_img.png") no-repeat center;
   background-size: contain;
 }
 
-main .containerProyectos .api-get {
-  /* Card proyecto fetch - API - GET */
+main .containerProyectos .api-get .backImage {
   width: 100%;
   height: 400px;
   background: white url("../img/fetch.jpg") no-repeat center;
   background-size: contain;
 }
 
-main .containerProyectos .chrono {
-  /* Card proyecto cronómetro */
+main .containerProyectos .chrono .backImage {
   width: 100%;
   height: 400px;
   background: white url("../img/cronometro.jpg") no-repeat center;
   background-size: contain;
 }
 
-main .containerProyectos .backPetshop {
-  /* Card petshop */
+main .containerProyectos .backPetshop .backImage {
   width: 100%;
   height: 400px;
   background: white url("../img/pawprint 1.svg") no-repeat center;
   background-size: contain;
 }
 
-main .containerProyectos .backPetshop h2 {
-  animation: movimiento 3s infinite;
-}
-
-@keyframes movimiento {
-  from {
-    transform: scale(0.8);
-  }
-  to {
-    transform: scale(0.9);
-  }
-}
-
-main .containerProyectos .backHeroes {
-  /* Card súper héroes */
+main .containerProyectos .backHeroes .backImage {
   width: 100%;
   height: 400px;
   background: white url("../img/liga-justicia-batman.svg") no-repeat center;
   background-size: contain;
 }
 
-main .containerProyectos .backHeroes h2 {
-  animation: movimiento 3s infinite;
-}
-
-@keyframes movimiento {
-  from {
-    transform: scale(0.8);
-  }
-  to {
-    transform: scale(0.9);
-  }
-}
-
-main .containerProyectos .backCvLucas {
-  /* Card cv Lucas */
+main .containerProyectos .backCvLucas .backImage {
   width: 100%;
   height: 400px;
   background: white url("../img/perfil_linkedin.jpeg") no-repeat center;
   background-size: contain;
 }
 
-main .containerProyectos .backCvLucas h2 {
-  animation: movimiento 3s infinite;
-}
-
-@keyframes movimiento {
-  from {
-    transform: scale(0.8);
-  }
-  to {
-    transform: scale(0.9);
-  }
-}
-
-main .containerProyectos .backCvBatman {
-  /* Card cv Batman */
+main .containerProyectos .backCvBatman .backImage {
   width: 100%;
   height: 400px;
   background: white url("../img/logo_batman.svg") no-repeat center;
   background-size: contain;
 }
 
-main .containerProyectos .backCvBatman h2 {
-  animation: movimiento 3s infinite;
-}
-
-@keyframes movimiento {
-  from {
-    transform: scale(0.8);
-  }
-  to {
-    transform: scale(0.9);
-  }
-}
-
-main .containerProyectos .backLemonPie {
-  /* Card Lemon Pie */
+main .containerProyectos .backLemonPie .backImage {
   width: 100%;
   height: 400px;
   background: white url("../img/lemon-pie-1.svg") no-repeat center;
   background-size: contain;
 }
 
-main .containerProyectos .backLemonPie h2 {
-  animation: movimiento 3s infinite;
-}
-
-@keyframes movimiento {
-  from {
-    transform: scale(0.8);
-  }
-  to {
-    transform: scale(0.9);
-  }
-}
-
-main .containerProyectos .backPizzeria {
-  /* Card Pizzería */
+main .containerProyectos .backPizzeria .backImage {
   width: 100%;
   height: 400px;
   background: white url("../img/VectorPizza.svg") no-repeat center;
   background-size: contain;
 }
 
-main .containerProyectos .backPizzeria h2 {
-  animation: movimiento 2s infinite;
-}
-
-@keyframes movimiento {
-  from {
-    transform: scale(0.8);
-  }
-  to {
-    transform: scale(0.9);
-  }
-}
-
-main .containerProyectos .web-mH {
-  /* Card Manteca & Harina */
+main .containerProyectos .web-mH .backImage {
   width: 100%;
   height: 400px;
   background: white url("../img/logo_m&h.jpeg") no-repeat center;
   background-size: contain;
 }
 
-main .containerProyectos .web-mH h2 {
-  animation: movimiento 2s infinite;
-}
-
-@keyframes movimiento {
-  from {
-    transform: scale(0.8);
-  }
-  to {
-    transform: scale(0.9);
-  }
-}
-
-main .containerProyectos .api-github {
-  /* Card GitHub Api */
+main .containerProyectos .api-github .backImage {
   width: 100%;
   height: 400px;
   background: white url("../img/logo_github.png") no-repeat center;
   background-size: contain;
-}
-
-main .containerProyectos .api-github h2 {
-  animation: movimiento 2s infinite;
-}
-
-@keyframes movimiento {
-  from {
-    transform: scale(0.8);
-  }
-  to {
-    transform: scale(0.9);
-  }
 }
 
 footer a {
