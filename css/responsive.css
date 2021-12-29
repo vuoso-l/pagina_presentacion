@@ -100,7 +100,25 @@
 
 @media (min-width: 1024px) {
   main .containerProyectos .card {
-    width: 30%;
+    height: 500px;
+  }
+  main .containerProyectos .card h2 {
+    font-size: 34px;
+  }
+  main .containerProyectos .card a {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 1280px) {
+  main .containerProyectos .card {
+    height: 600px;
+  }
+  main .containerProyectos .card h2 {
+    font-size: 38px;
+  }
+  main .containerProyectos .card a {
+    font-size: 34px;
   }
 }
 
