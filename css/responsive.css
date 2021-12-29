@@ -63,7 +63,25 @@
 
 @media (min-width: 1024px) {
   main .container .card {
-    width: 30%;
+    height: 500px;
+  }
+  main .container .card h2 {
+    font-size: 34px;
+  }
+  main .container .card a {
+    font-size: 30px;
+  }
+}
+
+@media (min-width: 1280px) {
+  main .container .card {
+    height: 600px;
+  }
+  main .container .card h2 {
+    font-size: 38px;
+  }
+  main .container .card a {
+    font-size: 34px;
   }
 }
 
