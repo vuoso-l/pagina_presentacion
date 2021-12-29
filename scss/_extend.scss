@@ -9,16 +9,15 @@
   box-shadow: 2px 2px 2px;
   border-radius: 5px;
   margin: 5px 0px;
-  padding: 5px 10px;
+  padding: 5px;
   text-align: center;
   color: black;
 }
 
-$colorSec: rgb(66, 66, 214);
+$colorSec: white;
 %hoverBacks {
   //características del hover de los backs de proyectos
-  padding: 7.5px 15px;
-  font-size: 1.5rem;
+  background-color: grey;
   color: $colorSec;
 }
 

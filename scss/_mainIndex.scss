@@ -6,13 +6,10 @@ main {
       justify-content: space-between;
       width: 70%;
       height: 400px;
-      box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+      box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.25);
+      border: 1px solid black;
       border-radius: 15px;
       margin: 20px 0px;
-    }
-    .estaticos {
-      /* Card proyectos estaticos */
-      @include backgroundImagenes("../img/html-css.jpg");
       h2 {
         @extend %subtYAncorProyectos;
         animation: movimiento 3s infinite;
@@ -23,36 +20,24 @@ main {
         &:hover {
           @extend %hoverBacks;
         }
+      }
+    }
+    .estaticos {
+      /* Card proyectos estaticos */
+      .backImage {
+        @include backgroundImagenes("../img/html-css.jpg");
       }
     }
     .dinamicos {
       /* Card proyectos dinámicos */
-      @include backgroundImagenes("../img/html-css-js.png");
-      h2 {
-        @extend %subtYAncorProyectos;
-        animation: movimiento 3s infinite;
-      }
-      @include keyframeMovimiento;
-      a {
-        @extend %subtYAncorProyectos;
-        &:hover {
-          @extend %hoverBacks;
-        }
+      .backImage {
+        @include backgroundImagenes("../img/html-css-js.png");
       }
     }
     .api {
       /* Card proyectos front API propia */
-      @include backgroundImagenes("../img/front-api.png");
-      h2 {
-        @extend %subtYAncorProyectos;
-        animation: movimiento 3s infinite;
-      }
-      @include keyframeMovimiento;
-      a {
-        @extend %subtYAncorProyectos;
-        &:hover {
-          @extend %hoverBacks;
-        }
+      .backImage {
+        @include backgroundImagenes("../img/front-api.png");
       }
     }
   }
