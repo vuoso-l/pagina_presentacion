@@ -16,6 +16,7 @@ main .container .card h2, main .container .card button, main .container .card a 
 }
 
 main .container .card button:hover, main .container .card a:hover {
+  cursor: pointer;
   background-color: grey;
   color: white;
 }
