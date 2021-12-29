@@ -68,7 +68,7 @@
   main .container .card h2 {
     font-size: 34px;
   }
-  main .container .card a {
+  main .container .card button, main .container .card a {
     font-size: 30px;
   }
 }
@@ -80,44 +80,7 @@
   main .container .card h2 {
     font-size: 38px;
   }
-  main .container .card a {
-    font-size: 34px;
-  }
-}
-
-@media (min-width: 768px) {
-  main .containerProyectos {
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    padding: 100px 0px;
-  }
-  main .containerProyectos .card {
-    width: 40%;
-    margin: 10px;
-  }
-}
-
-@media (min-width: 1024px) {
-  main .containerProyectos .card {
-    height: 500px;
-  }
-  main .containerProyectos .card h2 {
-    font-size: 34px;
-  }
-  main .containerProyectos .card a {
-    font-size: 30px;
-  }
-}
-
-@media (min-width: 1280px) {
-  main .containerProyectos .card {
-    height: 600px;
-  }
-  main .containerProyectos .card h2 {
-    font-size: 38px;
-  }
-  main .containerProyectos .card a {
+  main .container .card button, main .container .card a {
     font-size: 34px;
   }
 }

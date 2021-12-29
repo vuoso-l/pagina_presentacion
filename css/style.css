@@ -5,7 +5,7 @@ header, header nav div a {
   text-shadow: 2px 2px 2px black;
 }
 
-main .container .card h2, main .container .card a, main .containerProyectos .card h2, main .containerProyectos .card a, main .containerProyectos .toDo h2 {
+main .container .card h2, main .container .card button, main .container .card a {
   background-color: aliceblue;
   box-shadow: 2px 2px 2px;
   border-radius: 5px;
@@ -15,7 +15,7 @@ main .container .card h2, main .container .card a, main .containerProyectos .car
   color: black;
 }
 
-main .container .card a:hover, main .containerProyectos .card a:hover {
+main .container .card button:hover, main .container .card a:hover {
   background-color: grey;
   color: white;
 }
@@ -117,6 +117,22 @@ main .container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  /* Card proyectos estaticos */
+  /* Card proyectos dinámicos */
+  /* Card proyectos front API propia */
+  /* Card proyecto ToDo app */
+  /* Card proyecto felinos - cambiar tema claro/oscuro */
+  /* Card proyecto sandBox */
+  /* Card proyecto fetch - API - GET */
+  /* Card proyecto cronómetro */
+  /* Card petshop */
+  /* Card súper héroes */
+  /* Card cv Lucas */
+  /* Card cv Batman */
+  /* Card Lemon Pie */
+  /* Card Pizzería */
+  /* Card Manteca & Harina */
+  /* Card GitHub Api */
 }
 
 main .container .card {
@@ -145,19 +161,11 @@ main .container .card h2 {
   }
 }
 
-main .container .estaticos {
-  /* Card proyectos estaticos */
-}
-
 main .container .estaticos .backImage {
   width: 100%;
   height: 400px;
   background: white url("../img/html-css.jpg") no-repeat center;
   background-size: contain;
-}
-
-main .container .dinamicos {
-  /* Card proyectos dinámicos */
 }
 
 main .container .dinamicos .backImage {
@@ -167,10 +175,6 @@ main .container .dinamicos .backImage {
   background-size: contain;
 }
 
-main .container .api {
-  /* Card proyectos front API propia */
-}
-
 main .container .api .backImage {
   width: 100%;
   height: 400px;
@@ -178,136 +182,91 @@ main .container .api .backImage {
   background-size: contain;
 }
 
-main .containerProyectos {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  /* Card proyecto ToDo app */
-  /* Card proyecto felinos - cambiar tema claro/oscuro */
-  /* Card proyecto sandBox */
-  /* Card proyecto fetch - API - GET */
-  /* Card proyecto cronómetro */
-  /* Card petshop */
-  /* Card súper héroes */
-  /* Card cv Lucas */
-  /* Card cv Batman */
-  /* Card Lemon Pie */
-  /* Card Pizzería */
-  /* Card Manteca & Harina */
-  /* Card GitHub Api */
-}
-
-main .containerProyectos .card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  width: 70%;
-  height: 400px;
-  box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.25);
-  border: 1px solid black;
-  border-radius: 15px;
-  margin: 20px 0px;
-}
-
-main .containerProyectos .card h2 {
-  animation: movimiento 3s infinite;
-}
-
-@keyframes movimiento {
-  from {
-    transform: scale(0.8);
-  }
-  to {
-    transform: scale(0.9);
-  }
-}
-
-main .containerProyectos .toDo .backImage {
+main .container .toDo .backImage {
   width: 100%;
   height: 400px;
   background: white url("../img/ToDo_app.png") no-repeat center;
   background-size: contain;
 }
 
-main .containerProyectos .felinos .backImage {
+main .container .felinos .backImage {
   width: 100%;
   height: 400px;
   background: white url("../img/felino.jpg") no-repeat center;
   background-size: contain;
 }
 
-main .containerProyectos .sandBox .backImage {
+main .container .sandBox .backImage {
   width: 100%;
   height: 400px;
   background: white url("../img/solicitar_img.png") no-repeat center;
   background-size: contain;
 }
 
-main .containerProyectos .api-get .backImage {
+main .container .api-get .backImage {
   width: 100%;
   height: 400px;
   background: white url("../img/fetch.jpg") no-repeat center;
   background-size: contain;
 }
 
-main .containerProyectos .chrono .backImage {
+main .container .chrono .backImage {
   width: 100%;
   height: 400px;
   background: white url("../img/cronometro.jpg") no-repeat center;
   background-size: contain;
 }
 
-main .containerProyectos .backPetshop .backImage {
+main .container .backPetshop .backImage {
   width: 100%;
   height: 400px;
   background: white url("../img/pawprint 1.svg") no-repeat center;
   background-size: contain;
 }
 
-main .containerProyectos .backHeroes .backImage {
+main .container .backHeroes .backImage {
   width: 100%;
   height: 400px;
   background: white url("../img/liga-justicia-batman.svg") no-repeat center;
   background-size: contain;
 }
 
-main .containerProyectos .backCvLucas .backImage {
+main .container .backCvLucas .backImage {
   width: 100%;
   height: 400px;
   background: white url("../img/perfil_linkedin.jpeg") no-repeat center;
   background-size: contain;
 }
 
-main .containerProyectos .backCvBatman .backImage {
+main .container .backCvBatman .backImage {
   width: 100%;
   height: 400px;
   background: white url("../img/logo_batman.svg") no-repeat center;
   background-size: contain;
 }
 
-main .containerProyectos .backLemonPie .backImage {
+main .container .backLemonPie .backImage {
   width: 100%;
   height: 400px;
   background: white url("../img/lemon-pie-1.svg") no-repeat center;
   background-size: contain;
 }
 
-main .containerProyectos .backPizzeria .backImage {
+main .container .backPizzeria .backImage {
   width: 100%;
   height: 400px;
   background: white url("../img/VectorPizza.svg") no-repeat center;
   background-size: contain;
 }
 
-main .containerProyectos .web-mH .backImage {
+main .container .web-mH .backImage {
   width: 100%;
   height: 400px;
   background: white url("../img/logo_m&h.jpeg") no-repeat center;
   background-size: contain;
 }
 
-main .containerProyectos .api-github .backImage {
+main .container .api-github .backImage {
   width: 100%;
   height: 400px;
   background: white url("../img/logo_github.png") no-repeat center;
