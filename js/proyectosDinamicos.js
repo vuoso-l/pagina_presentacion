@@ -2,6 +2,7 @@ const btnDinamicos = document.querySelector(".dinamicos button");
 const h1Dinamicos = document.querySelector("h1");
 const h2Dinamicos = document.querySelector("h2");
 const h3Dinamicos = document.querySelector("h3");
+const aDinamicos = document.querySelector("a");
 const containerDinamicos = document.querySelector(".container");
 
 btnDinamicos.addEventListener("click", (e) => {
@@ -10,8 +11,11 @@ btnDinamicos.addEventListener("click", (e) => {
     h2Dinamicos.innerHTML = "";
     h3Dinamicos.innerHTML = "Basado en aprendizaje Certified Tech Developer";
 
+    aDinamicos.setAttribute("class", "btn-return");
+    aDinamicos.setAttribute("href", "../index.html");
+    aDinamicos.innerText = "Volver al home";
+
     containerDinamicos.innerHTML = `
-    <a class="btn-return" href="../index.html">Volver al Home</a>
     <div class="card toDo">
         <h2>ToDo app</h2>
         <div class="backImage"></div>

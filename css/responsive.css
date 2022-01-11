@@ -49,6 +49,9 @@
 }
 
 @media (min-width: 768px) {
+  main .btn-return {
+    font-size: 26px;
+  }
   main .container {
     flex-direction: row;
     flex-wrap: wrap;

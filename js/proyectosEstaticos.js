@@ -2,6 +2,7 @@ const btnEstaticos = document.querySelector(".estaticos button");
 const h1Estaticos = document.querySelector("h1");
 const h2Estaticos = document.querySelector("h2");
 const h3Estaticos = document.querySelector("h3");
+const aEstaticos = document.querySelector("a");
 const containerEstaticos = document.querySelector(".container");
 
 btnEstaticos.addEventListener("click", (e) => {
@@ -10,8 +11,11 @@ btnEstaticos.addEventListener("click", (e) => {
   h2Estaticos.innerHTML = "";
   h3Estaticos.innerHTML = "Basado en aprendizaje Certified Tech Developer";
 
+  aEstaticos.setAttribute("class", "btn-return");
+  aEstaticos.setAttribute("href", "../index.html");
+  aEstaticos.innerText = "Volver al home";
+
   containerEstaticos.innerHTML = `
-    <a class="btn-return" href="../index.html">Volver al Home</a>
     <div class="card backPetshop">
         <h2>petshop</h2>
         <div class="backImage"></div>

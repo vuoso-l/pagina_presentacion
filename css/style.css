@@ -15,7 +15,7 @@ main .container .card h2, main .container .card button, main .container .card a 
   color: black;
 }
 
-main .container .btn-return:hover, main .container .card button:hover, main .container .card a:hover {
+main .btn-return:hover, main .container .card button:hover, main .container .card a:hover {
   cursor: pointer;
   background-color: grey;
   color: white;
@@ -116,6 +116,20 @@ header nav div a {
   margin: 0;
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main .btn-return {
+  box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.25);
+  border: 1px solid black;
+  border-radius: 15px;
+  padding: 10px;
+  margin-top: 10px;
+}
+
 main .container {
   display: flex;
   flex-direction: column;
@@ -139,14 +153,6 @@ main .container {
   /* Card GitHub Api */
   /* Card theme light to dark */
   /* Card render images */
-}
-
-main .container .btn-return {
-  box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.25);
-  border: 1px solid black;
-  border-radius: 15px;
-  padding: 10px;
-  margin-top: 10px;
 }
 
 main .container .card {
