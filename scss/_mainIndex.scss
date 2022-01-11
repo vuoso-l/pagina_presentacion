@@ -41,6 +41,12 @@ main {
         @include backgroundImagenes("../img/front-api.png");
       }
     }
+    /* Card proyectos front API propia */
+    .react {
+      .backImage {
+        @include backgroundImagenes("../img/react.png");
+      }
+    }
     /* Card proyecto ToDo app */
     .toDo {
       .backImage {
@@ -117,6 +123,18 @@ main {
     .api-github {
       .backImage {
         @include backgroundImagenes("../img/logo_github.png");
+      }
+    }
+    /* Card theme light to dark */
+    .theme {
+      .backImage {
+        @include backgroundImagenes("../img/theme-dark-light.jpg");
+      }
+    }
+    /* Card render images */
+    .parcel-sandbox {
+      .backImage {
+        @include backgroundImagenes("../img/solicitar_img.png");
       }
     }
   }
