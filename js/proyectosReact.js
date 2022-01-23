@@ -13,7 +13,7 @@ btnReact.addEventListener("click", (e) => {
   h3React.innerHTML = "";
   
   aReact.setAttribute("class", "btn-return");
-  aReact.setAttribute("href", "../index.html");
+  aReact.setAttribute("href", "/index.html");
   aReact.innerText = "Volver al home";
 
   containerReact.innerHTML = `

@@ -12,7 +12,7 @@ btnDinamicos.addEventListener("click", (e) => {
     h3Dinamicos.innerHTML = "Basado en aprendizaje Certified Tech Developer";
 
     aDinamicos.setAttribute("class", "btn-return");
-    aDinamicos.setAttribute("href", "../index.html");
+    aDinamicos.setAttribute("href", "/index.html");
     aDinamicos.innerText = "Volver al home";
 
     containerDinamicos.innerHTML = `

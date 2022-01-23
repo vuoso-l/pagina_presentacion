@@ -12,7 +12,7 @@ btnApi.addEventListener("click", (e) => {
     h3Api.innerHTML = "";
     
     aApi.setAttribute("class", "btn-return");
-    aApi.setAttribute("href", "../index.html");
+    aApi.setAttribute("href", "/index.html");
     aApi.innerText = "Volver al home";
     
     containerApi.innerHTML = `

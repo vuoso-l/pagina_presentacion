@@ -12,7 +12,7 @@ btnEstaticos.addEventListener("click", (e) => {
   h3Estaticos.innerHTML = "Basado en aprendizaje Certified Tech Developer";
 
   aEstaticos.setAttribute("class", "btn-return");
-  aEstaticos.setAttribute("href", "../index.html");
+  aEstaticos.setAttribute("href", "/index.html");
   aEstaticos.innerText = "Volver al home";
 
   containerEstaticos.innerHTML = `
