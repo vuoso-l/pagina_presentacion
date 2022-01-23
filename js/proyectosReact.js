@@ -20,12 +20,12 @@ btnReact.addEventListener("click", (e) => {
     <div class="card theme">
         <h2>Cambio tema claro a oscuro</h2>
         <div class="backImage"></div>
-        <a href=" https://vuoso-l.github.io/react_render-images/" target="_blank">Ingresar</a>
+        <a href="https://vuoso-l.github.io/react_render-images/" target="_blank">Ingresar</a>
     </div>        
     <div class="card parcel-sandbox">
         <h2>Renderizado imágenes base</h2>
         <div class="backImage"></div>
-        <a href="https://github.com/vuoso-l/react_parcel-sandbox" target="_blank">Ingresar</a>
+        <a href="https://vuoso-l.github.io/react_parcel-sandbox/" target="_blank">Ingresar</a>
     </div>
     `;
 });
