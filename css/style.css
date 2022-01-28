@@ -1,6 +1,5 @@
-@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,700&display=swap");
-header, header nav div a {
+header {
   color: white;
   text-shadow: 2px 2px 2px black;
 }
@@ -15,7 +14,7 @@ main .container .card h2, main .container .card button, main .container .card a 
   color: black;
 }
 
-main .btn-return:hover, main .container .card button:hover, main .container .card a:hover {
+header .btn-return:hover, main .container .card button:hover, main .container .card a:hover {
   cursor: pointer;
   background-color: grey;
   color: white;
@@ -91,29 +90,13 @@ header h3 {
   text-align: center;
 }
 
-header nav label {
-  display: block;
-  cursor: pointer;
-}
-
-header nav input[type="checkbox"] {
-  display: none;
-}
-
-header nav #toggle:checked + .menu {
-  display: block;
-}
-
-header nav div {
-  text-align: center;
-  width: 100%;
-  display: none;
-}
-
-header nav div a {
-  display: block;
-  border-bottom: 1px solid #eaeaeb;
-  margin: 0;
+header .btn-return {
+  box-shadow: 4px 4px 4px rgba(255, 255, 255, 0.25);
+  border: 1px solid white;
+  color: white;
+  border-radius: 15px;
+  padding: 10px;
+  margin-top: 10px;
 }
 
 main {
@@ -122,37 +105,10 @@ main {
   align-items: center;
 }
 
-main .btn-return {
-  box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.25);
-  border: 1px solid black;
-  border-radius: 15px;
-  padding: 10px;
-  margin-top: 10px;
-}
-
 main .container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* Card proyectos estaticos */
-  /* Card proyectos dinámicos */
-  /* Card proyectos front API propia */
-  /* Card proyectos front API propia */
-  /* Card proyecto ToDo app */
-  /* Card proyecto felinos - cambiar tema claro/oscuro */
-  /* Card proyecto sandBox */
-  /* Card proyecto fetch - API - GET */
-  /* Card proyecto cronómetro */
-  /* Card petshop */
-  /* Card súper héroes */
-  /* Card cv Lucas */
-  /* Card cv Batman */
-  /* Card Lemon Pie */
-  /* Card Pizzería */
-  /* Card Manteca & Harina */
-  /* Card GitHub Api */
-  /* Card theme light to dark */
-  /* Card render images */
 }
 
 main .container .card {
@@ -311,6 +267,27 @@ main .container .parcel-sandbox .backImage {
   width: 100%;
   height: 400px;
   background: white url("../img/solicitar_img.png") no-repeat center;
+  background-size: contain;
+}
+
+main .container .crud .backImage {
+  width: 100%;
+  height: 400px;
+  background: white url("../img/crud.png") no-repeat center;
+  background-size: contain;
+}
+
+main .container .music-search .backImage {
+  width: 100%;
+  height: 400px;
+  background: white url("../img/buscador_canciones.jpg") no-repeat center;
+  background-size: contain;
+}
+
+main .container .modals .backImage {
+  width: 100%;
+  height: 400px;
+  background: white url("../img/modal.jpg") no-repeat center;
   background-size: contain;
 }
 

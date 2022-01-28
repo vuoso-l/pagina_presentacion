@@ -1,15 +1,5 @@
 main {
-  @include flex(column, center);
-  .btn-return {
-    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.25);
-    border: 1px solid black;
-    border-radius: 15px;
-    padding: 10px;
-    margin-top: 10px;
-    &:hover {
-      @extend %hoverBacks;
-    }
-  }
+  @include flex(column, center);  
   .container {
     @include flex(column, center);
     .card {
@@ -34,118 +24,114 @@ main {
         }
       }
     }
-    /* Card proyectos estaticos */
     .estaticos {
       .backImage {
         @include backgroundImagenes("../img/html-css.jpg");
       }
     }
-    /* Card proyectos dinámicos */
     .dinamicos {
       .backImage {
         @include backgroundImagenes("../img/html-css-js.png");
       }
     }
-    /* Card proyectos front API propia */
     .api {
       .backImage {
         @include backgroundImagenes("../img/front-api.png");
       }
     }
-    /* Card proyectos front API propia */
     .react {
       .backImage {
         @include backgroundImagenes("../img/react.png");
       }
     }
-    /* Card proyecto ToDo app */
     .toDo {
       .backImage {
         @include backgroundImagenes("../img/ToDo_app.png");
       }
     }
-    /* Card proyecto felinos - cambiar tema claro/oscuro */
     .felinos {
       .backImage {
         @include backgroundImagenes("../img/felino.jpg");
       }
     }
-    /* Card proyecto sandBox */
     .sandBox {
       .backImage {
         @include backgroundImagenes("../img/solicitar_img.png");
       }
     }
-    /* Card proyecto fetch - API - GET */
     .api-get {
       .backImage {
         @include backgroundImagenes("../img/fetch.jpg");
       }
     }
-    /* Card proyecto cronómetro */
     .chrono {
       .backImage {
         @include backgroundImagenes("../img/cronometro.jpg");
       }
     }
-    /* Card petshop */
     .backPetshop {
       .backImage {
         @include backgroundImagenes("../img/pawprint\ 1.svg");
       }
     }
-    /* Card súper héroes */
     .backHeroes {
       .backImage {
         @include backgroundImagenes("../img/liga-justicia-batman.svg");
       }
     }
-    /* Card cv Lucas */
     .backCvLucas {
       .backImage {
         @include backgroundImagenes("../img/perfil_linkedin.jpeg");
       }
     }
-    /* Card cv Batman */
     .backCvBatman {
       .backImage {
         @include backgroundImagenes("../img/logo_batman.svg");
       }
     }
-    /* Card Lemon Pie */
     .backLemonPie {
       .backImage {
         @include backgroundImagenes("../img/lemon-pie-1.svg");
       }
     }
-    /* Card Pizzería */
     .backPizzeria {
       .backImage {
         @include backgroundImagenes("../img/VectorPizza.svg");
       }
     }
-    /* Card Manteca & Harina */
     .web-mH {
       .backImage {
         @include backgroundImagenes("../img/logo_m&h.jpeg");
       }
     }
-    /* Card GitHub Api */
     .api-github {
       .backImage {
         @include backgroundImagenes("../img/logo_github.png");
       }
     }
-    /* Card theme light to dark */
     .theme {
       .backImage {
         @include backgroundImagenes("../img/theme-dark-light.jpg");
       }
     }
-    /* Card render images */
     .parcel-sandbox {
       .backImage {
         @include backgroundImagenes("../img/solicitar_img.png");
+      }
+    }
+    .crud {
+      .backImage {
+        @include backgroundImagenes("../img/crud.png");
+      }
+    }
+    .music-search {
+      .backImage {
+        @include backgroundImagenes("../img/buscador_canciones.jpg");
+      }
+    }
+    .modals {
+      .backImage {
+        @include backgroundImagenes("../img/modal.jpg");
       }
     }
   }
