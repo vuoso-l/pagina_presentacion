@@ -1,19 +1,14 @@
 const btnEstaticos = document.querySelector(".estaticos button");
-const h1Estaticos = document.querySelector("h1");
-const h2Estaticos = document.querySelector("h2");
-const h3Estaticos = document.querySelector("h3");
-const aEstaticos = document.querySelector("a");
+const headerEstaticos = document.querySelector(".headerIndex");
 const containerEstaticos = document.querySelector(".container");
 
 btnEstaticos.addEventListener("click", (e) => {
   e.preventDefault();
-  h1Estaticos.innerHTML = "Repositorio estático";
-  h2Estaticos.innerHTML = "";
-  h3Estaticos.innerHTML = "Basado en aprendizaje Certified Tech Developer";
-
-  aEstaticos.setAttribute("class", "btn-return");
-  aEstaticos.setAttribute("href", "/index.html");
-  aEstaticos.innerText = "Volver al home";
+  headerEstaticos.innerHTML = `
+    <h1>Repositorio estático JS</h1>
+    <h3>Basado en aprendizaje Certified Tech Developer</h3>
+    <a class="btn-return" href="./index.html">Volver al home</a>
+  `;
 
   containerEstaticos.innerHTML = `
     <div class="card backPetshop">

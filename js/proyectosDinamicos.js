@@ -1,21 +1,16 @@
 const btnDinamicos = document.querySelector(".dinamicos button");
-const h1Dinamicos = document.querySelector("h1");
-const h2Dinamicos = document.querySelector("h2");
-const h3Dinamicos = document.querySelector("h3");
-const aDinamicos = document.querySelector("a");
+const headerDinamicos = document.querySelector(".headerIndex");
 const containerDinamicos = document.querySelector(".container");
 
 btnDinamicos.addEventListener("click", (e) => {
-    e.preventDefault();
-    h1Dinamicos.innerHTML = "Repositorio dinámico";
-    h2Dinamicos.innerHTML = "";
-    h3Dinamicos.innerHTML = "Basado en aprendizaje Certified Tech Developer";
+  e.preventDefault();
+  headerEstaticos.innerHTML = `
+    <h1>Repositorio estático JS</h1>
+    <h3>Basado en aprendizaje Certified Tech Developer</h3>
+    <a class="btn-return" href="./index.html">Volver al home</a>
+  `;
 
-    aDinamicos.setAttribute("class", "btn-return");
-    aDinamicos.setAttribute("href", "/index.html");
-    aDinamicos.innerText = "Volver al home";
-
-    containerDinamicos.innerHTML = `
+  containerDinamicos.innerHTML = `
     <div class="card toDo">
         <h2>ToDo app</h2>
         <div class="backImage"></div>

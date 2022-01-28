@@ -3,13 +3,12 @@ const headerReact = document.querySelector(".headerIndex");
 const containerReact = document.querySelector(".container");
 
 btnReact.addEventListener("click", (e) => {
-  console.log("click");
   e.preventDefault();
 
   headerReact.innerHTML = `
-  <h1>Repositorio React JS</h1>
-  <a class="btn-return" href="./index.html">Volver al home</a>
-  `
+    <h1>Repositorio React JS</h1>
+    <a class="btn-return" href="./index.html">Volver al home</a>
+  `;
 
   containerReact.innerHTML = `
     <div class="card theme">
