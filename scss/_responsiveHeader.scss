@@ -4,7 +4,8 @@
     h1 {
       font-size: 50px;
     }
-    h3{
+    h2,
+    h3 {
       font-size: 26px;
     }
     nav {
@@ -27,7 +28,7 @@
 }
 
 @media (min-width: 1024px) {
-  .headerIndex{
+  .headerIndex {
     padding: 65px 0px;
   }
   header {
@@ -35,11 +36,11 @@
     h1 {
       font-size: 54px;
     }
-    h3{
+    h3 {
       font-size: 28px;
     }
-    nav {      
-      div {        
+    nav {
+      div {
         font-size: 24px;
       }
     }
@@ -47,7 +48,7 @@
 }
 
 @media (min-width: 1024px) {
-  .headerIndex{
+  .headerIndex {
     padding: 85px 0px;
-  }  
+  }
 }

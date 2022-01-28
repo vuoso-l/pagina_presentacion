@@ -14,7 +14,7 @@ main .container .card h2, main .container .card button, main .container .card a 
   color: black;
 }
 
-header .btn-return:hover, main .container .card button:hover, main .container .card a:hover {
+main .title .btn-return:hover, main .container .card button:hover, main .container .card a:hover {
   cursor: pointer;
   background-color: grey;
   color: white;
@@ -90,19 +90,27 @@ header h3 {
   text-align: center;
 }
 
-header .btn-return {
-  box-shadow: 4px 4px 4px rgba(255, 255, 255, 0.25);
-  border: 1px solid white;
-  color: white;
-  border-radius: 15px;
-  padding: 10px;
-  margin-top: 10px;
-}
-
 main {
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-top: 20px;
+}
+
+main .title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+main .title .btn-return {
+  box-shadow: 4px 4px 4px rgba(255, 255, 255, 0.25);
+  border: 1px solid black;
+  border-radius: 15px;
+  font-weight: bold;
+  padding: 10px;
+  margin-top: 10px;
 }
 
 main .container {

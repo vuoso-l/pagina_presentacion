@@ -5,6 +5,7 @@
   header h1 {
     font-size: 50px;
   }
+  header h2,
   header h3 {
     font-size: 26px;
   }
@@ -49,14 +50,19 @@
 }
 
 @media (min-width: 768px) {
-  main .btn-return {
+  main .title h2 {
+    font-size: 30px;
+    padding: 10px 0px;
+  }
+  main .title h3, main .title .btn-return {
     font-size: 26px;
+    padding: 10px;
   }
   main .container {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    padding: 100px 0px;
+    padding: 20px 0px;
   }
   main .container .card {
     width: 40%;
@@ -65,25 +71,34 @@
 }
 
 @media (min-width: 1024px) {
+  main .title h2 {
+    font-size: 38px;
+  }
+  main .title h3, main .title .btn-return {
+    font-size: 32px;
+  }
   main .container .card {
     height: 500px;
   }
   main .container .card h2 {
     font-size: 34px;
   }
-  main .container .card button, main .container .card a {
+  main .container .card button,
+  main .container .card a {
     font-size: 30px;
   }
 }
 
 @media (min-width: 1280px) {
   main .container .card {
+    width: 30%;
     height: 600px;
   }
   main .container .card h2 {
     font-size: 38px;
   }
-  main .container .card button, main .container .card a {
+  main .container .card button,
+  main .container .card a {
     font-size: 34px;
   }
 }

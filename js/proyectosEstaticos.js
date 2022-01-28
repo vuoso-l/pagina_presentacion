@@ -1,15 +1,15 @@
 const btnEstaticos = document.querySelector(".estaticos button");
-const headerEstaticos = document.querySelector(".headerIndex");
+const titleEstaticos = document.querySelector(".title");
 const containerEstaticos = document.querySelector(".container");
 
 btnEstaticos.addEventListener("click", (e) => {
   e.preventDefault();
-  headerEstaticos.innerHTML = `
-    <h1>Repositorio estático JS</h1>
-    <h3>Basado en aprendizaje Certified Tech Developer</h3>
-    <a class="btn-return" href="./index.html">Volver al home</a>
-  `;
 
+  titleEstaticos.innerHTML = `
+    <h2>Repositorio estático JS</h2>
+    <h3>Basado en aprendizaje Certified Tech Developer</h3>
+    <a class="btn-return" href="./index.html">Volver al home</a>  
+  `;
   containerEstaticos.innerHTML = `
     <div class="card backPetshop">
         <h2>petshop</h2>

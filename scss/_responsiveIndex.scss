@@ -1,13 +1,20 @@
 @media (min-width: 768px) {
   main {
-    .btn-return {
-      font-size: 26px;
+    .title {
+      h2 {
+        font-size: 30px;
+        padding: 10px 0px;
+      }
+      h3, .btn-return {
+        font-size: 26px;
+        padding: 10px;
+      }
     }
     .container {
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: center;
-      padding: 100px 0px;
+      padding: 20px 0px;
       .card {
         width: 40%;
         margin: 10px;
@@ -18,13 +25,22 @@
 
 @media (min-width: 1024px) {
   main {
+    .title {
+      h2 {
+        font-size: 38px;
+      }
+      h3, .btn-return {
+        font-size: 32px;
+      }
+    }
     .container {
       .card {
         height: 500px;
         h2 {
           font-size: 34px;
         }
-        button, a {
+        button,
+        a {
           font-size: 30px;
         }
       }
@@ -33,14 +49,16 @@
 }
 
 @media (min-width: 1280px) {
-  main {
+  main {    
     .container {
       .card {
+        width: 30%;
         height: 600px;
         h2 {
           font-size: 38px;
         }
-        button, a {
+        button,
+        a {
           font-size: 34px;
         }
       }

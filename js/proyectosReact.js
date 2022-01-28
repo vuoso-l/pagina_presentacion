@@ -1,15 +1,14 @@
 const btnReact = document.querySelector(".btn-react");
-const headerReact = document.querySelector(".headerIndex");
+const titleReact = document.querySelector(".title");
 const containerReact = document.querySelector(".container");
 
 btnReact.addEventListener("click", (e) => {
   e.preventDefault();
 
-  headerReact.innerHTML = `
-    <h1>Repositorio React JS</h1>
+  titleReact.innerHTML = `
+    <h2>Repositorio React JS</h2>
     <a class="btn-return" href="./index.html">Volver al home</a>
   `;
-
   containerReact.innerHTML = `
     <div class="card theme">
         <h2>Cambio tema claro a oscuro</h2>

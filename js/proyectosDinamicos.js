@@ -1,13 +1,14 @@
 const btnDinamicos = document.querySelector(".dinamicos button");
-const headerDinamicos = document.querySelector(".headerIndex");
+const titleDinamicos = document.querySelector(".title");
 const containerDinamicos = document.querySelector(".container");
 
 btnDinamicos.addEventListener("click", (e) => {
   e.preventDefault();
-  headerEstaticos.innerHTML = `
-    <h1>Repositorio estático JS</h1>
+  
+  titleDinamicos.innerHTML = `
+    <h2>Repositorio proyectos dinámicos JS</h2>
     <h3>Basado en aprendizaje Certified Tech Developer</h3>
-    <a class="btn-return" href="./index.html">Volver al home</a>
+    <a class="btn-return" href="./index.html">Volver al home</a>  
   `;
 
   containerDinamicos.innerHTML = `
